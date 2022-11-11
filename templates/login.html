@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><img src="/static/images/logo.png" class="main-nav-logo"></a>
+        </li>
+        <li class="nav-item main-nav-li">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+       
+    </ul>
+  </div>
+</nav>
+
+<div class="container login-container">
+  {% if alertd|length %}
+    <div class="alert alert-danger alert-dismissible text-center">
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>{{alertd}}</strong> 
+    </div>
+  {% endif %}
+    <div class="row login-row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <img src="/static/images/logo.png" class="login-img">
+            <h2 class="text-center login-h2">Login</h2>
+            <h4 class="text-center login-h4">Kindly contact hospital administrator to get your registered patient id and patient name.</h4>
+            <form class="login-form" action="{{url_for('login')}}" method="post">
+                <div class="form-group lg-form-gp">
+                    <label>Patient ID</label>
+                    <input type="number" class="form-control" name="pat_id">
+                </div>
+                <div class="form-group lg-form-gp">
+                    <label>Patient Name</label>
+                    <input type="text" class="form-control" name="pat_name">
+                </div>
+                <button type="submit" class="btn btn-primary login-bt">Login</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img class="foot-logo" src="/static/images/logo.png" width="50px">
+            </h6>
+            
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Home</a>
+            </p>
+          
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MEDICO</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

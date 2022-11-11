@@ -1,0 +1,87 @@
+.main-nav-logo{
+    width:50px;
+}
+.main-nav-li{
+    margin-top:4%;
+}
+.home-bg{
+    background-image: url('/static/images/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.home-h1{
+    font-size: 5.5rem;
+    color: white;
+    font-weight: bold;
+    padding-top: 3%;
+}
+.home-top-p{
+    font-size: 2rem;
+    color: grey;
+    margin-top: 6%;
+}
+.home-cont{
+    margin-top:10%;
+    padding-bottom: 10%;
+}
+.home-card-div{
+    width: 400px;
+    border: 5px solid lightblue;
+    margin-left: 19%;
+}
+.home-card-btn{
+    width:100%;
+}
+.foot-logo{
+    margin: auto;
+    display: block;
+    width: 100px;
+}
+.login-container{
+    min-height: 500px;;
+}
+.login-row{
+    padding-top: 10%;
+}
+.login-img{
+    margin:auto;
+    display: block;
+    width: 100px;
+}
+.login-h2{
+    margin-bottom: 5%;
+}
+.login-bt{
+    width:100%;
+}
+.login-form{
+    border: 5px solid lightblue;
+    padding: 3%;
+    border-radius: 15px;
+}
+.lg-form-gp{
+    margin-bottom: 5%;
+}
+.admin-side-logo{
+    width:3%;
+}
+.admin-side-title{
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: transparent;
+    text-align: center;
+}
+.dash-row{
+    margin-top:10%;
+}
+.ad-norm-btn{
+    margin-top: 1%;
+}
+.ad-norm-div-grp{
+    margin-bottom:2%;
+}
+.login-h4{
+    border: 2px dotted red;
+    padding: 1%;
+    font-size: 1rem;
+}
